@@ -24,6 +24,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//rutas cargos
+
+Route::post('api/cargos/guardar', 'CargosController@store');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
